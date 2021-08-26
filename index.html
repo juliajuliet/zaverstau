@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
 </head>
@@ -64,18 +65,20 @@
                 <h2>Популярные букеты</h2>
                 <div class="popular-item">
                     <div class="popular-item-description">
-                        <h3>Букет «Нежность»</h3>
-                        <p class="bouquet-description">Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
-                        <p class="bouquet-size">30 × 40 см</p>
-                        <p class="bouquet-price">3600 руб.</p>
-                        <a class="btn btn-order" href="#">Заказать</a>
+                        <div class="popular-item-text">
+                            <h3>Букет «Нежность»</h3>
+                            <p class="bouquet-description">Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
+                            <p class="bouquet-size">30 × 40 см</p>
+                            <p class="bouquet-price">3600 руб.</p>
+                            <a class="btn btn-order" href="#">Заказать</a>
+                        </div>
                         <a class="catalog-link" href="" target="_blank"><img class="bouquet-img" src="img/imgbin_flower-bouquet.png" alt="Букет «Нежность»"></a>
                     </div>
                     <div class="sliders">
-                        <button class="btn-back" type="button"></button>
-                        <button class="btn-forward" type="button"></button>
+                        <button type="button"><span class="btn-prev"></span></button>
+                        <button type="button"><span class="btn-next"></span></button>
                     </div>
-                </div>
+               </div>
             </div>
         </section>
 
@@ -98,42 +101,49 @@
 
         <section class="discount">
             <div class="container">
-                <h2>Скидка 10% на первый заказ</h2>
-                <p>Если заказываете у нас букет впервые — при оформлении заказа введите промокод «Botanika2021» и получите скидку 10%.</p>
-                <a class="catalog-link" href="" target="_blank"><img class="discount-img" src="img/florist-makes-bouquet.jpg" width="590" height="391" alt="Изображение букета в разделе скидка"></a>
+                <div class="discount-text">
+                    <h2>Скидка 10% <br>на первый заказ</h2>
+                    <p>Если заказываете у нас букет впервые — при оформлении заказа введите промокод «Botanika2021» и получите скидку 10%.</p>
+                </div>
+                <img class="discount-img" src="img/florist-makes-bouquet.jpg" width="590" height="391" alt="Изображение букета в разделе скидка">
             </div>
         </section>
 
         <section class="four-steps">
-            <div class="container">
-                <div class="step first-step">
-                    <h4>Заказ</h4>
-                    <p>Выберите понравившейся букет из каталога и оформите заказ</p>
-                </div>
-                <div class="step second-step">
-                    <h4>Уточнение деталей</h4>
-                    <p>Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали</p>
-                </div>
-                <div class="step third-step">
-                    <h4>Оплата</h4>
-                    <p>Оплатить заказ можно онлайн на сайте или при получении</p>
-                </div>
-                <div class="step fourth-step">
-                    <h4>Доставка</h4>
-                    <p>Курьер позвонит за час до прибытия и доставит заказ вовремя</p>
-                </div>
+            <div class="container clearfix">
+                <h2>4 шага к идеальному букету</h2>
+                <div class="steps">
+                    <div class="step first-step">
+                        <h4>Заказ</h4>
+                        <p>Выберите понравившейся букет из каталога и оформите заказ</p>
+                    </div>
+                    <div class="step second-step">
+                        <h4>Уточнение деталей</h4>
+                        <p>Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали</p>
+                    </div>
+                    <div class="step third-step">
+                        <h4>Оплата</h4>
+                        <p>Оплатить заказ можно онлайн на сайте или при получении</p>
+                    </div>
+                    <div class="step fourth-step">
+                        <h4>Доставка</h4>
+                        <p>Курьер позвонит за час до прибытия и доставит заказ вовремя</p>
+                    </div>
+                </div>             
             </div>
         </section>
 
         <section class="our-news">
             <div class="container">
-                <h2>Следите за нашими новостями</h2>
-                <p>Подписывайтесь на наши соцсети и узнавайте
-                    о новинках и акциях первым.</p>
-                <div class="contact-links">
-                    <a class="contact-link inst-link" href="#">inst</a>
-                    <a class="contact-link fb-link" href="#">fb</a>
-                    <a class="contact-link twitter-link" href="#">twitter</a>
+                <div class="follow-us-links">
+                    <h2>Следите за нашими новостями</h2>
+                    <p>Подписывайтесь на наши соцсети и узнавайте<br>
+                        о новинках и акциях первым.</p>
+                    <div class="contact-links">
+                        <a class="contact-link inst-link" href="#">inst</a>
+                        <a class="contact-link fb-link" href="#">fb</a>
+                        <a class="contact-link twitter-link" href="#">twitter</a>                       
+                    </div>
                 </div>
                 <div class="news-images">
                     <img class="news-image" src="img/samantha-gades.jpg" width="285" height="220" alt="Изображение букета в блоке новостей">
@@ -146,20 +156,20 @@
         <section class="reviews">
             <div class="container">
                 <h2>Отзывы</h2>
-                <blockquote class="review">
-                    <p>Всё очень понравилось! Быстрое оформление заказа, выбор удобного времени доставки. Всем большое спасибо!</p>
-                    <cite>Марина</cite>
-                </blockquote>
-                <blockquote class="review">
-                    <p>Внимательные флористы, вежливые. Магазин находится прям рядом с метро. Букет очень понравился, буду ещё заказывать!</p>
-                    <cite>Татьяна</cite>
-                </blockquote>
-                <blockquote class="review">
-                    <p>Выбор букетов на любой вкус
-                            и цену. Бывают хорошие скидки,
-                            а флористы всегда помогут и точно соберут красивый букет!</p>
-                    <cite>Ольга</cite>
-                </blockquote>
+                <div class="blockquotes clearfix">
+                    <blockquote class="review">
+                        <p>Всё очень понравилось! Быстрое оформление заказа, выбор удобного времени доставки. Всем большое спасибо!</p>
+                        <cite>Марина</cite>
+                    </blockquote>
+                    <blockquote class="review">
+                        <p>Внимательные флористы, вежливые. Магазин находится прям рядом с метро. Букет очень понравился, буду ещё заказывать!</p>
+                        <cite>Татьяна</cite>
+                    </blockquote>
+                    <blockquote class="review">
+                        <p>Выбор букетов на любой вкус и цену. Бывают хорошие скидки, а флористы всегда помогут и точно соберут красивый букет!</p>
+                        <cite>Ольга</cite>
+                    </blockquote>
+                </div>
             </div>
         </section>
 
@@ -190,18 +200,22 @@
     </main>
 
     <footer>
-        <a class="nav-link" href="#" target="_blank"><img class="logo" src="img/logo.png" alt="logo"></a>
-        <nav>
-            <a class="nav-link" href="#">Каталог</a>
-            <a class="nav-link" href="#">Доставка и оплата</a>
-            <a class="nav-link" href="#">Отзывы</a>
-            <a class="nav-link" href="#">Спецпредложения</a>
-            <a class="nav-link" href="#">Контакты</a>
-        </nav>
-        <div class="contact-links">
-            <a class="contact-link inst-link" href="">inst</a>
-            <a class="contact-link fb-link" href="">fb</a>
-            <a class="contact-link twitter-link" href="">twitter</a>
+        <div class="container">
+            <div class="logo-link">
+                <a class="nav-link" href="#"><img class="logo" src="img/logo-footer.png" width="100" height="33" alt="logo"></a>
+            </div>
+            <nav>
+                <a class="nav-link" href="#">Каталог</a>
+                <a class="nav-link" href="#">Доставка и оплата</a>
+                <a class="nav-link" href="#">Отзывы</a>
+                <a class="nav-link" href="#">Спецпредложения</a>
+                <a class="nav-link" href="#">Контакты</a>
+            </nav>
+            <div class="contact-links">
+                <a class="contact-link inst-link" href="">inst</a>
+                <a class="contact-link fb-link" href="">fb</a>
+                <a class="contact-link twitter-link" href="">twitter</a>
+            </div>
         </div>
     </footer>
 </body>

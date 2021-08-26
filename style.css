@@ -1,6 +1,7 @@
 html,
 body,
 main,
+footer,
 section {
     margin: 0;
     padding: 0;
@@ -8,7 +9,7 @@ section {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 20px;
-    background: #E5E5E5;
+    background: #ffffff;
     color: #AE7C78;
 }
 
@@ -34,6 +35,29 @@ a {
     padding: 30px 70px;
 
 }
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    color: #AE7C78;
+    padding: 0;
+    margin: 0;    
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+}
+
 
 /*Навигация*/
 header nav {
@@ -81,8 +105,6 @@ header nav .container {
 .header-bottom-text p {
     margin: 0;
     margin-top: 30px;
-    font-size: 24px;
-    line-height: 30px;
     margin-bottom: 100px;
 }
 
@@ -134,15 +156,12 @@ header nav .container {
 }
 
 .feature p {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
     color: #AE7C78;
     margin: 0;
     margin-top: 15px;
     text-align: left;
+    font-size: 16px;
+    line-height: 20px;
     width: 285px;
 }
 
@@ -154,20 +173,20 @@ header nav .container {
 }
 
 .delivery-feature::before {
-    background: url('img/delivery.svg') no-repeat;
+    background: url('img/icon-delivery.svg') no-repeat;
     width: 82px;
     height: 52px;
 }
 
 .fresh-feature::before {
-    background: url('img/icon-fresh-flowers.png') no-repeat;
+    background: url('img/icon-bouquet.svg') no-repeat;
     width: 52px;
     height: 52px;
-    left: -54px;
+    left: -60px;
 }
 
 .photo-feature::before {
-    background: url('img/icon-photo.png') no-repeat;
+    background: url('img/icon-photo.svg') no-repeat;
     width: 58.6px;
     height: 52px;
     left: -80px;
@@ -175,7 +194,7 @@ header nav .container {
 
 /**/
 .popular-items {
-    padding-top: 82px;
+    margin-top: 80px;
 }
 
 .popular-items .container {
@@ -194,4 +213,463 @@ header nav .container {
     color: #AE7C78;
     padding: 0;
     margin: 0;
+}
+
+.popular-item {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.popular-item-description {
+    margin: 0;
+    padding: 0;
+}
+.popular-item-text {
+    float: left;
+}
+.popular-item-text h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #AE7C78;
+    margin: 0;
+    padding: 0;
+    padding-top: 25px;
+}
+
+.popular-item-text p {
+    width: 387px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #AE7C78;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.popular-item-text .bouquet-size {
+    padding-top: 25px;
+}
+
+.popular-item-text .bouquet-price {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    padding-top: 25px;
+    margin-bottom: 95px;
+}
+
+.popular-item-description .catalog-link {
+    float: right;
+}
+
+.sliders {
+    margin: 0 auto;
+}
+
+.sliders button {
+    display: inline-block;
+    color: #fff;
+    border-radius: 0;
+    border: none; 
+    margin: 0 auto; /* Это просто для выравнивания кнопки посередине */
+    width: 51px;
+    height: 20px;
+}
+
+.sliders button:first-child {
+	background: url('img/Arrow-back.svg') no-repeat;
+    margin-right: 20px;
+}
+
+.sliders button:last-child {
+	background: url('img/Arrow-forward.svg') no-repeat;
+}
+
+.catalog-items {
+    margin-top: 80px;
+}
+
+.catalog-items .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.catalog-item {
+    margin: 0;
+    padding: 0;
+    width: 388px;
+    height: 442px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.wedding-item {
+    background: url('img/Rectangle.png') repeat,url('img/sammi.jpg') no-repeat ;
+    background-position: center;
+    background-size: 388px 442px;
+}
+
+.peony-item {
+    background: url('img/Rectangle.png') repeat, url('img/peony.jpg') no-repeat;
+    background-position: center;
+    background-size: 388px 442px;
+}
+
+.choose-item {
+    background: url('img/Rectangle.png') repeat, url('img/alyssa-strohmann.jpg') no-repeat;
+    background-position: center;
+    background-size: 388px 442px;
+}
+.catalog-item h2 {
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.catalog-item p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+/*скидки*/
+.discount {
+    margin-top: 83px;
+}
+
+.discount .container {
+    display: grid;
+    grid-template-columns: 610px 590px;
+}
+
+.discount-text {
+    background-color: #AE7C78;
+    color: #fff;
+    padding-left: 102px;
+    padding-top: 30px;
+    padding-bottom: 64px;
+    box-sizing: border-box;
+}
+
+.discount-text h2 {
+    color: #fff;
+    font-weight: normal;
+    width: 360px;
+}
+
+.discount-text p {
+    margin: 0;
+    padding: 0;
+    margin-top: 34px;
+    width: 387px;
+}
+
+/*4 шага для заказа*/
+.four-steps {
+    margin-top: 80px;
+    padding: 0;
+}
+
+.four-steps h2 {
+    text-align: center;
+}
+
+.steps {
+    padding-top: 100px;
+    display: grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.step {
+    position: relative;
+}
+
+.step h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.step p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    width: 285px;
+    padding: 0;
+    margin-top: 8px;
+}
+
+.third-step p,
+.fourth-step p {
+    width: 260px;
+}
+
+.step::before {
+    position: absolute;
+    content: '';
+    top: -65px;
+    left: 120px;
+    width: 70px;
+    height: 55px;
+}
+
+.first-step::before {
+    background: url('img/icon-order.svg') no-repeat;
+}
+
+.second-step::before {
+    background: url('img/icon-operator.svg') no-repeat;
+    left: 130px;
+}
+
+.third-step::before {
+    background: url('img/icon-payment.svg') no-repeat;
+    left: 115px;
+}
+
+.fourth-step::before {
+    background: url('img/icon-delivery.svg') no-repeat;
+    left: 105px;
+    width: 83px;
+    height: 55px;
+}
+
+/*где читать новости*/
+.our-news {
+    margin-top: 80px;
+}
+
+.our-news .container {
+    display: grid;
+    grid-template-columns: 508px 692px;
+}
+
+.our-news .news-images {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+                        "b c"
+                        "a c";
+}
+
+.news-image:first-child {
+    grid-area: a;
+}
+
+.news-image:nth-child(2n) {
+    grid-area: b;
+}
+
+.news-image:last-child {
+    grid-area: c;
+}
+
+.follow-us-links {
+    padding-top: 70px;
+}
+
+.follow-us-links p {
+    margin-top: 35px;
+    width: 380px;
+}
+
+.contact-links {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.contact-link {
+    margin: 0;
+    font-size: 0;
+    width: 26px;
+    height: 20px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    position: relative;
+    float: left;
+}
+
+.inst-link {
+    position: absolute;
+    background: url('img/icon-inst.svg') no-repeat;
+    width: 20px;
+}
+
+.fb-link {
+    position: absolute;
+    background: url('img/icon-fb.svg') no-repeat;
+    width: 11.5px;
+    margin-left: 40px;
+}
+
+.twitter-link {
+    position: absolute;
+    background: url('img/icon-tw.svg') no-repeat;
+    margin-left: 73px;
+}
+
+/*отзывы*/
+.reviews {
+    margin-top: 80px;
+}
+
+.reviews .container {
+    border: 1px solid #AE7C78;
+}
+
+.reviews h2 {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.blockquotes {
+    margin-top: 40px;
+    padding-left: 44px;
+    padding-right: 44px;
+    padding-bottom: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.review {
+    width: 290px;
+    text-align: center;
+}
+
+.review p {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.review cite {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/*контакты*/
+.contacts {
+    margin-top: 80px;
+    position: relative;
+}
+
+.contacts .contacts-img {
+    display: block;
+    width: 100%;
+}
+
+.contact-info {
+    position: absolute;
+    top: 52px;
+    left: 222px;
+    width: 386px;
+    height: 520px;
+    background-color: #F7FAFC;
+    box-shadow: 0px 4px 40px rgba(217, 217, 217, 0.3);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info h2 {
+    margin-top: 40px;
+    padding-left: 35px;
+    margin-bottom: 42px;
+}
+
+.contact-info ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 35px;
+    display: flex;
+    flex-direction: column;
+    height: 293px;
+    justify-content: space-between;
+}
+
+.contact-info p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 10px;
+}
+
+.contact-info p:nth-child(2) {
+    font-weight: 500;
+}
+
+/*подвал*/
+footer {
+    margin: 0;
+    padding: 0;
+    background-color: #AE7C78;
+    width: 100%;
+    color: #fff;
+    padding-top: 21px;
+    padding-bottom: 41px;
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: 100px 1fr 96.76px;
+    vertical-align: middle;
+}
+
+footer .logo-link {
+    width: 100px;
+    height: 33px;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 98px;
+    padding-right: 98px;
+}
+
+footer nav a {
+    color: #fff;
+}
+
+footer .contact-links {
+    margin-top: 7px;
 }
