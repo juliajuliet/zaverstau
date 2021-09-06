@@ -58,6 +58,15 @@ p {
     line-height: 30px;
 }
 
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #AE7C78;
+}
 
 /*Навигация*/
 header nav {
@@ -77,9 +86,9 @@ header nav .container {
 /*шапка: текст+картинки в каталоге*/
 .header-bottom .container {
     padding-top: 82px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 }
 
 .header-bottom-text {
@@ -108,40 +117,41 @@ header nav .container {
     margin-bottom: 100px;
 }
 
-.header-bottom-images {
-    width: 794px;
-    display: flex;
-    flex-direction: row;
-}
 
-.header-bottom-images .catalog-link:first-child {
+
+.header-bottom .catalog-link:first-of-type{
     width: 386px;
     height: 404px;
     margin-right: 20px;
     margin-top: 60px;
 }
 
-.header-bottom-images .catalog-link:last-child {
+.header-bottom .catalog-link:last-child {
     width: 387px;
     height: 420px;
     margin: 0;
 }
 
+
 /*Преимущества*/
 .features {
-    padding-top: 40px;
-    padding-bottom: 75px;
+    margin-top: 42px;
+}
+
+.features .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 45px;
 }
 
 .feature {
     position: relative;
-    margin-left: 110px;
-    float: left;
+    padding-left: 90px;
     width: 282px;
 }
 
-.feature:last-child {
-    float: right;
+.feature:first-child {
+    padding-left: 110px;
 }
 
 .feature h3 {
@@ -169,7 +179,7 @@ header nav .container {
     position: absolute;
     content: '';
     top: 0;
-    left: -100px;
+    left: 0;
 }
 
 .delivery-feature::before {
@@ -182,17 +192,16 @@ header nav .container {
     background: url('img/icon-bouquet.svg') no-repeat;
     width: 52px;
     height: 52px;
-    left: -60px;
 }
 
 .photo-feature::before {
     background: url('img/icon-photo.svg') no-repeat;
     width: 58.6px;
     height: 52px;
-    left: -80px;
 }
 
-/**/
+
+/*популярные товары*/
 .popular-items {
     margin-top: 80px;
 }
@@ -270,35 +279,37 @@ header nav .container {
 
 .sliders {
     margin: 0 auto;
+    width: 122px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .sliders button {
-    display: inline-block;
-    color: #fff;
     border-radius: 0;
     border: none; 
-    margin: 0 auto; /* Это просто для выравнивания кнопки посередине */
     width: 51px;
     height: 20px;
-}
+} 
 
 .sliders button:first-child {
 	background: url('img/Arrow-back.svg') no-repeat;
-    margin-right: 20px;
 }
 
 .sliders button:last-child {
 	background: url('img/Arrow-forward.svg') no-repeat;
 }
 
+
+/*каталог*/
 .catalog-items {
     margin-top: 80px;
 }
 
 .catalog-items .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 .catalog-item {
@@ -315,7 +326,7 @@ header nav .container {
 }
 
 .wedding-item {
-    background: url('img/Rectangle.png') repeat,url('img/sammi.jpg') no-repeat ;
+    background: url('img/Rectangle.png') repeat, url('img/sammi.jpg') no-repeat ;
     background-position: center;
     background-size: 388px 442px;
 }
@@ -334,7 +345,6 @@ header nav .container {
 .catalog-item h2 {
     text-align: center;
     color: #FFFFFF;
-
 }
 
 .catalog-item p {
@@ -349,6 +359,7 @@ header nav .container {
     padding: 0;
     margin-top: 10px;
 }
+
 
 /*скидки*/
 .discount {
@@ -393,14 +404,14 @@ header nav .container {
 }
 
 .steps {
-    padding-top: 100px;
+    margin-top: 30px;
     display: grid;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .step {
     position: relative;
+    padding-top: 65px;
 }
 
 .step h4 {
@@ -434,8 +445,9 @@ header nav .container {
 .step::before {
     position: absolute;
     content: '';
-    top: -65px;
-    left: 120px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 70px;
     height: 55px;
 }
@@ -446,17 +458,14 @@ header nav .container {
 
 .second-step::before {
     background: url('img/icon-operator.svg') no-repeat;
-    left: 130px;
 }
 
 .third-step::before {
     background: url('img/icon-payment.svg') no-repeat;
-    left: 115px;
 }
 
 .fourth-step::before {
     background: url('img/icon-delivery.svg') no-repeat;
-    left: 105px;
     width: 83px;
     height: 55px;
 }
@@ -501,10 +510,10 @@ header nav .container {
 }
 
 .contact-links {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    margin-top: 40px;
+    margin-top: 40px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .contact-link {
@@ -515,7 +524,6 @@ header nav .container {
     background-color: #fff;
     background-repeat: no-repeat;
     position: relative;
-    float: left;
 }
 
 .inst-link {
